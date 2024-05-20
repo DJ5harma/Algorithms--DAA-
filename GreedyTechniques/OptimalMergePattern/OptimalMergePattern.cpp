@@ -4,7 +4,7 @@ using namespace std;
 // We will be given some n number of sorted lists (actually only lengths of those lists).
 // We have to find the least amount of time in which we can merge all those n lists (yes, like we did in merge sort)
 
-// It takes p + q time to merge two sorted lists of length p & q
+// It takes p + q time to merge two sorted lists of lengths p & q
 
 //Approach: We will get the minimum time overall if at every point, we merge the two lists with the least lengths at that time and add their lengths' sum to the total time taken. 
 // ofc those 2 lists will make a bigger list and then that will also be part of our considerations in the future

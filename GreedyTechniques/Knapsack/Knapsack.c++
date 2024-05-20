@@ -5,10 +5,16 @@ using namespace std;
 
 
 // Knapsack algorithm---------------------------
-    // Approach: we want the most profit while taking no more space than the space of the bag.
-    // We will sort the Object array in descending order acc. to P/W of each.
-    // Then one by one, we'll subtract the bagSpace with the weight of the object, add its profit and then repeat__
-    // __until no object can fully be added. Now we'll add the current max P/W object fractionally so that the bag gets just full, add its profit fractionally too, and exit.
+
+    // Objects:  a  b   c  d  e   f  g
+    // Profits: 10  5  15  7  6  18  3
+    // Weights:  2  3   5  7  1   4  1
+    // P/W: {we'll calculate}
+
+    // Aim: we want the most profit while taking no more space than the space of the bag.
+    // Approach: We will sort the Object array in descending order acc. to P/W of each.
+    // Then one by one, we'll subtract the bagSpace with the weight of the object, add its profit and then repeat____until no object can fully be added.
+    // Now we'll add the current max P/W object fractionally so that the bag gets just full, add its profit fractionally too, and exit.
 struct Object {
     char id;
     int profit;
