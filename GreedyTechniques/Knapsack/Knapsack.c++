@@ -9,7 +9,8 @@ using namespace std;
     // Objects:  a  b   c  d  e   f  g
     // Profits: 10  5  15  7  6  18  3
     // Weights:  2  3   5  7  1   4  1
-    // P/W: {we'll calculate}
+    // P/W: {we'll calculate on our own}
+    // Bag(knapsack) Space: 15
 
     // Aim: we want the most profit while taking no more space than the space of the bag.
     // Approach: We will sort the Object array in descending order acc. to P/W of each.
